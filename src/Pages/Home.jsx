@@ -1,10 +1,10 @@
-import React from 'react'
-import Posts from '../Components/Posts'
+import React from "react"
+import Posts from "../Components/Posts"
 
 function Home() {
   return (
     <div>
-      <Posts/>
+      <Posts />
     </div>
   )
 }

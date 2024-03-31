@@ -450,7 +450,7 @@ input,select,textarea {
   height: 1rem;
 }
 
-.avatar__form input,label{
+.avatar__form input{
   visibility: hidden;
 }
 
@@ -473,6 +473,7 @@ input,select,textarea {
   padding: 0;
   font-size: 2rem;
   background: var(--color-primary);
+  
 }
 
 .profile__details h1{
@@ -519,6 +520,25 @@ input,select,textarea {
 .dashboard__post-actions{
   display: flex;
   gap: 1rem;
+}
+
+
+/* ---------------------LOADER----------------------------------- */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-bg);
+}
+
+.loader_image{
+  width: 4.5rem;
+  aspect-ratio: 1/1;
 }
 
 
@@ -597,7 +617,7 @@ input,select,textarea {
     cursor: pointer;
   }
 
-  .posts__container,.category-posts__container{
+  .posts__container,.category-posts__container,.author-posts__container{
     grid-template-columns: 1fr;
     gap: 1rem;
   }
