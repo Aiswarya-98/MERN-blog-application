@@ -20,7 +20,7 @@ function DeletePost({ postId: id }) {
     }
   }, [])
 
-  const removePost = async () => {
+  const removePost = async (id) => {
     try {
       const response = await axios.delete(`${process.env.REACT_APP_BASE_URL}/posts/${id}`, { withCredentials: true, headers: { Authorization: `Bearer ${token}` } })
       if (response.status == 200) {
@@ -40,6 +40,10 @@ function DeletePost({ postId: id }) {
       <Link className="btn sm danger" onClick={() => removePost(id)}>
         Delete
       </Link>
+
+{/* <button className="btn sm danger" onClick={removePost}>
+      Delete
+    </button> */}
     </>
   )
 }
