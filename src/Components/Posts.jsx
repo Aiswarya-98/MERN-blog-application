@@ -15,6 +15,7 @@ function Posts() {
       try {
         const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/posts`)
         setPosts(response?.data)
+        console.log(response);
       } catch (err) {
         console.log(err)
       }
